@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Desktop Version */
 .pages {
-    box-sizing: border-box;
     background-color: #F2F2F2;
     height: 100vh;
     display: flex;
@@ -169,3 +174,34 @@
 /* End Desktop Version */
 
 /* Mobile Version */
+@media screen and (max-width: 376px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        max-width: 300px;
+        height: 100%;
+        padding: 30px 0;
+    }
+
+    .left,
+    .center,
+    .right {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .left {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .attribution {
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+}
